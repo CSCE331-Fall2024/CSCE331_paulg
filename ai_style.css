@@ -1,0 +1,40 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: rgb(65,234,212);
+    text-shadow: 0 0 25px rgb(65,234,212), 0 0 50px rgb(65,234,212);
+    transform: scale(1.1);
+}
+span{
+    color: rgb(65,234,212);
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 30px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover, .navbar a.active{
+    color: rgb(65,234,212);
+    border-bottom: 3px solid rgb(65,234,212);
+}
