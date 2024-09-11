@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualifications | Paul Guardiola</title>
-    <link rel="stylesheet" href="qual_style.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="qual_style.css">
+    <script type="text/javascript">
+        function swapStyleSheet(sheet){
+            document.getElementById('pagestyle').setAttribute('href',sheet);
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -15,7 +20,7 @@
             <a href="qualifications.html" class="active">Qualifications</a>
             <a href="selfless-service.html">Selfless Service</a>
             <a href="artificial-integellence.html">AI</a>
-            <a href="index_html_only.html">Landing Page without CSS</a>
+            <a onclick="swapStyleSheet('qual_style2.css')">Switch Styles</a>
         </nav>
     </header>
     <div class="home">
@@ -26,7 +31,7 @@
  
         </div>
         <div class="resume">
-            <object data="Guardiola_Paul.pdf" width="800" height="500"></object>
+            <img src="images/resume.png" alt="">
         </div>
     </div>
     <footer class="footer">
@@ -54,7 +59,7 @@
                 <a href="artificial-integellence.html">AI</a>
             </li>
             <li>
-                <a href="index_html_only.html">Landing Page without CSS</a>
+                <a onclick="swapStyleSheet('style_2.css')">Switch Styles</a>
             </li>
         </ul>
         <p class="copyright"> Paul Guardiola 2024</p>

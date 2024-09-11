@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selfless Service | Paul Guardiola</title>
-    <link rel="stylesheet" href="serv_style.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="serv_style.css">
+    <script type="text/javascript">
+        function swapStyleSheet(sheet){
+            document.getElementById('pagestyle').setAttribute('href',sheet);
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -15,7 +20,7 @@
             <a href="qualifications.html">Qualifications</a>
             <a href="selfless-service.html" class="active">Selfless Service</a>
             <a href="artificial-integellence.html">AI</a>
-            <a href="index_html_only.html">Landing Page without CSS</a>
+            <a onclick="swapStyleSheet('serv_style2.css')">Switch Styles</a>
         </nav>
     </header>
     <section class="home">
@@ -68,7 +73,7 @@
                 <a href="artificial-integellence.html">AI</a>
             </li>
             <li>
-                <a href="index_html_only.html">Landing Page without CSS</a>
+                <a onclick="swapStyleSheet('style_2.css')">Switch Styles</a>
             </li>
         </ul>
         <p class="copyright"> Paul Guardiola 2024</p>

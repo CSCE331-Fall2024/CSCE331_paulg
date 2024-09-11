@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Page | Paul Guardiola</title>
-    <link rel="stylesheet" href="ai_style.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function swapStyleSheet(sheet){
+            document.getElementById('pagestyle').setAttribute('href',sheet);
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -15,20 +20,20 @@
             <a href="qualifications.html">Qualifications</a>
             <a href="selfless-service.html">Selfless Service</a>
             <a href="artificial-integellence.html" class="active">AI</a>
-            <a href="index_html_only.html">Landing Page without CSS</a>
+            <a onclick="swapStyleSheet('style_2.css')">Switch Styles</a>
         </nav>
     </header>
-    <section id="overview">
+    <section class="overview">
         <h2>What is Parallel Computing?</h2>
         <p>Parallel computing is a type of computation where many calculations or processes are carried out simultaneously. Large problems can often be divided into smaller ones, which are then solved at the same time.</p>
     </section>
 
-    <section id="importance">
+    <section class="overview2">
         <h2>Importance of Parallel Computing</h2>
         <p>Parallel computing is essential for tackling large-scale computational problems efficiently. It reduces processing time by leveraging multiple processors to work on different parts of a task simultaneously.</p>
     </section>
 
-    <section id="applications">
+    <section class="overview3">
         <h2>Applications of Parallel Computing</h2>
         <p>Parallel computing is used in various fields, including scientific simulations, data analysis, machine learning, and more.</p>
     </section>
